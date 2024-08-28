@@ -1,0 +1,13 @@
+def reverse_words(string):
+    word=[]
+    length=len(string)
+    space=''
+    i=0
+    while i<length:
+        if string[i]!=space:
+             start=i
+                while i<length and string[i]!=space:
+                    i+=1
+                    reverse_sentence=''
+                    for word in reversed(words):
+                        reverse_sentence+=word+''
